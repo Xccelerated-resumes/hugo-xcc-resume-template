@@ -1,13 +1,11 @@
-# Almeida CV Theme
+# XCC CV Theme
 Theme to build a customizeable printable HTML/CSS CV.
-
-![Screenshot](images/screenshot-full.png)
 
 # Features
  - Online CV with minor responsiveness
  - Printable as A4 PDF
  - HTML5 + CSS3
- - Customizeable colors
+ - Customizable colors
 
 ## Print your PDF CV
 When printing the page in the browser, you'll get a formatted A4 page that can be used as your PDF resume.
@@ -17,16 +15,13 @@ For better formatting, you can set the number of pages in the `config.toml` file
 
 If badges and other elements with background don't render correctly, remember to toggle the "Background Graphics" option in the print dialog.
 
-# Usage
-## Install Hugo (extended)
-To use `almeida-cv` theme you need to install Hugo Extended by following https://gohugo.io/getting-started/installing/.
 
 ## Create your personal website
 ```
 hugo new site <your website's name>
 cd <your website's name>
 git init
-git submodule add https://github.com/ineesalmeida/almeida-cv.git themes/almeida-cv
+git submodule add https://github.com/xcc-resumes/hugo-xcc-resume-template.git themes/resume-template
 ```
 Replace the files in your site root's directory with the ones in `themes/almeida-cv/exampleSite`.
 
@@ -49,6 +44,3 @@ To generate static files of your website, execute the following:
 hugo --minify
 ```
 within the root of your project.
-
-# Contributing
-Post bugs and contributions to the issue tracker. Or make a pull request.
