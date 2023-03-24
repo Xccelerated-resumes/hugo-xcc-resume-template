@@ -21,7 +21,8 @@ If badges and other elements with background don't render correctly, remember to
 hugo new site <your website's name>
 cd <your website's name>
 git init
-git submodule add https://github.com/xcc-resumes/hugo-xcc-resume-template.git themes/resume-template
+git submodule add git@github.com:Xccelerated-resumes/hugo-xcc-resume-template.git 
+ themes/resume-template
 ```
 Replace the files in your site root's directory with the ones in `themes/almeida-cv/exampleSite`.
 
