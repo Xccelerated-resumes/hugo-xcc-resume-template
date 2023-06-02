@@ -1,4 +1,5 @@
 .skills {
+    text-align: left;
     &__group {
         margin-bottom: 0.8rem;
 
@@ -8,11 +9,6 @@
 
             &::after{
                 content: ":"
-            }
-
-            &:hover ~ li {
-                background-color: $color-primary;
-                color: $color-light;
             }
 
         }
@@ -29,10 +25,6 @@
                 content: ", "
             }
 
-            &:hover {
-                background-color: $color-primary;
-                color: $color-light;
-            }
         }
     }
 }

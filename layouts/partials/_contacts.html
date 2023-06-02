@@ -1,11 +1,32 @@
 {{ if .BasicInfo.Contacts }}
 <div class="sideSection contact">
     <ul>
-        {{ range .BasicInfo.Contacts }}
+        {{ if .BasicInfo.Contacts.Phone }}
         <li class="contact__item">
-            <i class="{{ .Icon }}"></i><span>{{ .Info | safeHTML }}</span>
+            <i class="fas fa-phone"></i><span>{{ .BasicInfo.Contacts.Phone | safeHTML }}</span>
         </li>
-        {{ end }}
+        {{ end}}
+        {{ if .BasicInfo.Contacts.Email }}
+        <li class="contact__item">
+            <i class="fas fa-envelope"></i><span>{{ .BasicInfo.Contacts.Email | safeHTML }}</span>
+        </li>
+        {{ end}}
+        {{ if .BasicInfo.Contacts.Location }}
+        <li class="contact__item">
+            <i class="fas fa-map-marker-alt"></i><span>{{ .BasicInfo.Contacts.Location | safeHTML }}</span>
+        </li>
+        {{ end}}
+
+        {{ if .BasicInfo.Contacts.LinkedIn }}
+        <li class="contact__item">
+            <i class="fas fa-globe"></i><span>{{ .BasicInfo.Contacts.LinkedIn | safeHTML }}</span>
+        </li>
+        {{ end}}
+        {{ if .BasicInfo.Contacts.GitHub }}
+        <li class="contact__item">
+            <i class="fas fa-globe"></i><span>{{ .BasicInfo.Contacts.GitHub | safeHTML }}</span>
+        </li>
+        {{ end}}
     </ul>
 </div>
 {{ end }}

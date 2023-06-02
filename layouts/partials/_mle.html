@@ -1,0 +1,38 @@
+{{ if eq .Role "MLE" }}
+
+<div class="experience__item">
+    <div class="experience__header">
+        <h3 class="experience__company">
+            Xccelerated
+        </h3>
+        <h3 class="experience__place">Amsterdam</h3>
+    </div>
+    <div class="experience__job">
+        <div class="experience__subheader">
+            <h3 class="experience__position">
+                Machine Learning Engineer
+            </h3>
+            <h3 class="experience__date">{{ .StartAtXccelerated | safeHTML }}+</h3>
+        </div>
+        <ul>
+            <li class="experience__bullet">
+                As a ML Engineer at Xccelerated, I will follow a training program to get up to speed with the latest ML engineering techniques to build production-ready, scalable machine learning systems.
+                Some of the topics during the year include automating model deployments and retraining, model and data versioning, model and data testing, monitoring models in production and deploying and monitoring cloud infrastructure
+            </li>
+        </ul>
+        <div class="experience__badges">
+            <ul>
+                <li class="experience__badge">Python</li>
+                <li class="experience__badge">PySpark</li>
+                <li class="experience__badge">Docker</li>
+                <li class="experience__badge">scikit-learn</li>
+                <li class="experience__badge">Airflow</li>
+                <li class="experience__badge">Kubernetes</li>
+                <li class="experience__badge">Prometheus</li>
+                <li class="experience__badge">Terraform</li>
+                <li class="experience__badge">CI/CD</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}

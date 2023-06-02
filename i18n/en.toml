@@ -1,6 +1,9 @@
 [profile]
 other = "Profile"
 
+[about]
+other = "About Xccelerated"
+
 [experience]
 other = "Experience"
 

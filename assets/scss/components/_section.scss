@@ -23,8 +23,9 @@
             transition: all 0.5s ease-in-out;
         }
 
-        &:hover::after {
-            border-color: $color-primary;
-        }
     }
+}
+
+.section__content p {
+    margin-bottom: 3px;
 }

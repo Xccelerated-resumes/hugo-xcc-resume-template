@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla Regular', sans-serif;
     font-weight: 300;
     line-height: 1.7;
     font-size: 1.12rem;
@@ -8,13 +8,21 @@ body {
 
 .mainHeading {
     text-transform: uppercase;
-    font-size: 5rem;
-    color: $color-secondary;
+    font-size: 4rem;
+    color: white;
+    float: left;
+    margin-top: 100px;
+
+    margin-left: 30px;
+    vertical-align: center;
+    text-underline-offset: 8px;
 
     & span {
-        color: $color-primary;
+        color: #11D8CA;
+
     }
 }
+
 
 .section__title {
     font-size: 2.1rem;

@@ -5,6 +5,8 @@
     </div>
     <div class="section__content">
         <div class="experience">
+            {{ partial "_mle.html" .BasicInfo }}
+            {{ partial "_de.html" .BasicInfo }}
             {{ range .Experience }}
             {{ if .Class }}
             <div class="experience__item {{ .Class }}">
@@ -26,9 +28,7 @@
                         <h3 class="experience__date">{{ .Date | safeHTML }}</h3>
                     </div>
                     <ul>
-                        {{ range .Details }}
-                        <li class="experience__bullet">{{ . | safeHTML }}</li>
-                        {{ end }}
+                        <li class="experience__bullet">{{ .Details | markdownify }}</li>
                     </ul>
                     <div class="experience__badges">
                         <ul>

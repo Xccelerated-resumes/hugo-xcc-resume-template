@@ -20,6 +20,7 @@ html {
     width: $page-width;
     min-height: paper_height($page-width);
     background-color: $color-light;
+    text-align: justify;
 
     @media screen and (min-width: 60rem) {
         margin: 6rem 0;
@@ -48,3 +49,23 @@ body {
     color: $color-light;
     background-color: darken(rgba($color-primary, 0.6), 10%);
 }
+
+.header__img {
+
+    background-image: url('img/header_crop.jpg');
+    height: 260px;
+    width: 97%;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #4D269E;
+    border-radius: 80px 0px 80px 0px;
+    margin: 1.5%;
+}
+
+.logo {
+    float: right;
+    width: 35%;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+

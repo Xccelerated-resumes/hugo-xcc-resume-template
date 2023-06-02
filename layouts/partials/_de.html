@@ -1,0 +1,38 @@
+{{ if eq .Role "DE" }}
+
+<div class="experience__item">
+    <div class="experience__header">
+        <h3 class="experience__company">
+            Xccelerated
+        </h3>
+        <h3 class="experience__place">Amsterdam</h3>
+    </div>
+    <div class="experience__job">
+        <div class="experience__subheader">
+            <h3 class="experience__position">
+                Data Engineer
+            </h3>
+            <h3 class="experience__date">{{ .StartAtXccelerated | safeHTML }}+</h3>
+        </div>
+        <ul>
+            <li class="experience__bullet">
+                As a Data Engineer at Xccelerated, I will undergo a training program to gain proficiency in the latest data engineering techniques. This program covers Big Data and Cloud technologies such as Apache Spark for distributed computing, Kafka for streaming systems, Apache Airflow for workflow orchestration, and data modeling using dbt. The program emphasizes advanced programming patterns in Python and the functional programming paradigm, which is fundamental for creating maintainable and scalable systems.
+            </li>
+        </ul>
+        <div class="experience__badges">
+            <ul>
+                <li class="experience__badge">Python</li>
+                <li class="experience__badge">PySpark</li>
+                <li class="experience__badge">Docker</li>
+                <li class="experience__badge">DBT</li>
+                <li class="experience__badge">Airflow</li>
+                <li class="experience__badge">Kubernetes</li>
+                <li class="experience__badge">CI/CD</li>
+                <li class="experience__badge">Prometheus</li>
+                <li class="experience__badge">Terraform</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
