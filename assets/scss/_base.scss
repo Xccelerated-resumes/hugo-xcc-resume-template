@@ -18,18 +18,13 @@ html {
 .content {
     // A4 paper
     width: $page-width;
-    min-height: paper_height($page-width);
+    min-height: 11.7in - 0.5in;  // minus margins
     background-color: $color-light;
     text-align: justify;
 
     @media screen and (min-width: 60rem) {
         margin: 6rem 0;
-        @include shadow(1);
         @include hz-center;
-    }
-    @media print {
-        margin: 0;
-        height: paper_height($page-width) * $pages;
     }
 }
 
@@ -69,3 +64,14 @@ body {
     padding-top: 20px;
 }
 
+
+@page :first {
+    margin-bottom: 0.3in;
+    margin-top: 0in;
+}
+
+@page  {
+    margin-bottom: 0.3in;
+    margin-top: 0.3in;
+    //height: paper_height($page-width) * $pages;
+}
