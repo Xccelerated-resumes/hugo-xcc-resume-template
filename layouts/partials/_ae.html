@@ -1,0 +1,40 @@
+{{ if eq .Role "AE" }}
+
+<div class="experience__item">
+    <div class="experience__header">
+        <h3 class="experience__company">
+            Xccelerated
+        </h3>
+        <h3 class="experience__place">Amsterdam</h3>
+    </div>
+    <div class="experience__job">
+        <div class="experience__subheader">
+            <h3 class="experience__position">
+                Analytics Engineer
+            </h3>
+            <h3 class="experience__date">{{ .StartAtXccelerated | safeHTML }}+</h3>
+        </div>
+        <ul>
+            <li class="experience__bullet">
+                As an Analytics Engineer at Xccelerated, I participate in a training program to gain proficiency in the latest naalytics engineering techniques.
+
+                Throughout the program, I receive one day of training a week on various topics, and I am continuously improving my skills by learning from industry experts and peers sharing knowledge during our return days.
+                This program covers among others writing Maintanable and Testable SQL, Data Pipeline Design, Data Modelling and Warehousing, DBT, CI/CD, Data Management and Data Visualiation.
+            </li>
+        </ul>
+        <div class="experience__badges">
+            <ul>
+                <li class="experience__badge">SQL</li>
+                <li class="experience__badge">DBT</li>
+                <li class="experience__badge">Power BI</li>
+                <li class="experience__badge">Data Vault</li>
+                <li class="experience__badge">Dimensional Modelling</li>
+                <li class="experience__badge">Data Pipelines</li>
+                <li class="experience__badge">CI/CD</li>
+                <li class="experience__badge">git</li>
+                <li class="experience__badge">Python</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
